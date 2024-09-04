@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(fondo\ login.jpg);
+    background-size: cover;
+}
+
+/*lateral ixquierdo*/
+.container-form{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+}
+/*Barra lateral inicio de sesion*/
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #c7eef3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/* inicio de sesion*/
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+/*Bienvenido*/
+.info-childs h2{
+    font-size: 2.5rem;
+}
+/*para unirte...*/
+.info-childs p {
+    margin: 15px 0;
+    color: #555;
+}
+/*boton de iniciar sesion*/
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #9191bd;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+/*color del boton inicio de sesion*/
+.info-childs input:hover {
+    background-color:#9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+/*barra lateral derecha de crear cuenta*/
+.form-information {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60%;
+text-align: center;
+background-color: #f8f8f8;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+/*crear una cuenta*/
+.form-information-childs h2 {
+    color: #333;
+    font-size: 2rem;
+}
+/*o usa tu e-.....*/
+.form-information-childs p {
+    color: #555;
+}
+/*clase iconos*/
+.icons {
+    margin: 15px 0;
+}
+/*iconos*/
+.icons i {
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #9191bd;
+    border: solid thin #9191bd;
+    transition:background-color .3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+/*color iconos*/
+.icons i:hover {
+    background-color: #c7c7f3;
+    color: #fff;
+}
+/*clase form*/
+.form {
+    margin: 30px 0 0 0;
+}
+/*informacion dentro de las barras de texto: Nombre com...*/
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+/*barras de texto */
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+/*iconos de informacion: nombre com...*/
+.form label i {
+    color: #a7a7a7;
+}
+/*boton de registrase*/
+.form input[type="submit"] {
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+/*color del boton registrarse*/
+.form input[type="submit"]:hover {
+    background-color: #a7a79a;
+}
+
+.hide {
+    position: absolute;
+    transform:translateY(-300%);
+}
+/*parte RESPONSIVA*/
+/*si la pantalla esta a 750px*/
+@media screen and (max-width:750px) {
+    html {
+        font-size: 12px;
+    }
+}
+/*si la pantalla esta a 580px*/
+@media screen and (max-width:580px) {
+    html {
+        font-size: 10px;
+    }
+/*inicio de sesion se coloca arriba*/
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+/*cerramos los angulos de inicio de sesion*/
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+/*cerramos los angulos de registrarse*/
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+}
